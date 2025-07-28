@@ -797,7 +797,7 @@
               <th><i class="fas fa-box"></i> Product</th>
               <th><i class="fas fa-rupee-sign"></i> Price</th>
               <th><i class="fas fa-calculator"></i> COGS</th>
-              <th><i class="fas fa-chart-line"></i> Profit</th>
+<!--               <th><i class="fas fa-chart-line"></i> Profit</th> -->
               <th><i class="fas fa-clock"></i> Order Time</th>
               <th><i class="fas fa-hashtag"></i> Order Number</th>
             </tr>
@@ -1406,46 +1406,6 @@
         });
       }
 
-      // function renderPurchaseTable(data) {
-      //   const tbody = document
-      //     .getElementById("purchaseTable")
-      //     .querySelector("tbody");
-      //   tbody.innerHTML = "";
-
-      //   data.forEach((row) => {
-      //     const tr = document.createElement("tr");
-      //     tr.innerHTML = `
-      //     <td><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 8px;"></i>${
-      //       row.email
-      //     }</td>
-      //     <td><i class="fas fa-phone" style="color: var(--success-color); margin-right: 8px;"></i>${
-      //       row.phone_number
-      //     }</td>
-      //     <td><i class="fas fa-box" style="color: var(--info-color); margin-right: 8px;"></i>${
-      //       row.title
-      //     }</td>
-      //     <td><i class="fas fa-rupee-sign" style="color: var(--success-color); margin-right: 8px;"></i>${
-      //       row.total_price
-      //     }</td>
-      //     <td><i class="fas fa-calculator" style="color: var(--warning-color); margin-right: 8px;"></i>${
-      //       row.cogs
-      //     }</td>
-      //     <td><i class="fas fa-chart-line" style="color: var(--success-color); margin-right: 8px;"></i>${
-      //       row.profit
-      //     }</td>
-      //     <td><i class="fas fa-clock" style="color: var(--info-color); margin-right: 8px;"></i>${new Date(
-      //       row.created_at
-      //     ).toLocaleString()}</td>
-      //     <td><i class="fas fa-hashtag" style="color: var(--primary-color); margin-right: 8px;"></i>${
-      //       row.order_number
-      //     }</td>
-      //     <td><i class="fas fa-phone-alt" style="color: var(--success-color); margin-right: 8px;"></i>${new Date(
-      //       row.call_time
-      //     ).toLocaleString()}</td>
-      //   `;
-      //     tbody.appendChild(tr);
-      //   });
-      // }
       function renderPurchaseTable(data) {
         const tbody = document
           .getElementById("purchaseTable")
@@ -1470,9 +1430,7 @@
             <td><i class="fas fa-calculator" style="color: var(--warning-color); margin-right: 8px;"></i>${
               row.cogs
             }</td>
-            <td><i class="fas fa-chart-line" style="color: var(--success-color); margin-right: 8px;"></i>${
-              row.profit
-            }</td>
+            
             <td><i class="fas fa-clock" style="color: var(--info-color); margin-right: 8px;"></i>${new Date(
               row.created_at
             ).toLocaleString()}</td>
